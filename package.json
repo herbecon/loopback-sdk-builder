@@ -1,5 +1,5 @@
 {
-  "name": "@herbecon/loopback-sdk-builder",
+  "name": "loopback-sdk-builder",
   "version": "2.3.1",
   "description": "Tool for auto-generating Software Development Kits (SDKs) for LoopBack",
   "bin": {
@@ -31,67 +31,19 @@
     "nativescript",
     "{N}"
   ],
-  "author": {
-    "name": "Jonathan Casarrubias",
-    "email": "jcasarrubias@mean.expert",
-    "url": "http://mean.expert"
-  },
+  "author": "Jonathan Casarrubias <jcasarrubias@mean.expert> (http://mean.expert)",
   "contributors": [
-    {
-      "name": "João Ribeiro",
-      "email": "jonnybgod@gmail.com",
-      "url": "http://jonnybgod.ghost.io"
-    },
-    {
-      "name": "Nikolay Matiushenkov",
-      "email": "mnvxxx@gmail.com",
-      "url": "https://github.com/mnvx"
-    },
-    {
-      "name": "Sylvain Dumont",
-      "email": "sylvain.dumont35@gmail.com",
-      "url": "https://www.weboaks.com"
-    },
-    {
-      "name": "Yonggang Luo",
-      "email": "luoyonggang@gmail.com",
-      "url": "https://github.com/lygstate"
-    },
-    {
-      "name": "Chris Tunbridge",
-      "email": "blasterjr@gmail.com",
-      "url": "https://github.com/Destreyf"
-    },
-    {
-      "name": "Miguel Serrano",
-      "email": "miguelangelserrano4@gmail.com",
-      "url": "https://github.com/Serranom4"
-    },
-    {
-      "name": "Julien Ledun",
-      "email": "j.ledun@iosystems.fr",
-      "url": "https://github.com/jledun"
-    },
-    {
-      "name": "Paul Robinson",
-      "email": "probinson@nextfaze.com",
-      "url": "http://nextfaze.com"
-    },
-    {
-      "name": "Corentin Hatte",
-      "email": "contact@corentin-hatte.eu",
-      "url": "https://github.com/viki53"
-    },
-    {
-      "name": "Fabian Scheidt",
-      "email": "fabianscheidt@yahoo.de",
-      "url": "https://github.com/fabianscheidt"
-    },
-    {
-      "name": "Michał Frączkiewicz",
-      "email": "fraczkiewicz.m@gmail.com",
-      "url": "https://github.com/bonaventoora"
-    }
+    "João Ribeiro <jonnybgod@gmail.com> (http://jonnybgod.ghost.io)",
+    "Nikolay Matiushenkov <mnvxxx@gmail.com> (https://github.com/mnvx)",
+    "Sylvain Dumont <sylvain.dumont35@gmail.com> (https://www.weboaks.com)",
+    "Yonggang Luo <luoyonggang@gmail.com> (https://github.com/lygstate)",
+    "Chris Tunbridge <blasterjr@gmail.com> (https://github.com/Destreyf)",
+    "Miguel Serrano <miguelangelserrano4@gmail.com> (https://github.com/Serranom4)",
+    "Julien Ledun <j.ledun@iosystems.fr> (https://github.com/jledun)",
+    "Paul Robinson <probinson@nextfaze.com> (http://nextfaze.com)",
+    "Corentin Hatte <contact@corentin-hatte.eu> (https://github.com/viki53)",
+    "Fabian Scheidt <fabianscheidt@yahoo.de> (https://github.com/fabianscheidt)",
+    "Michał Frączkiewicz <fraczkiewicz.m@gmail.com> (https://github.com/bonaventoora)"
   ],
   "files": [
     "bin",
@@ -117,5 +69,10 @@
     "underscore": "^1.8.3",
     "underscore.inflections": "^0.2.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "homepage": "https://github.com/mean-expert-official/loopback-sdk-builder#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  }
 }
