@@ -1,5 +1,5 @@
 {
-  "name": "@herbecon/loopback-sdk-builder",
+  "name": "loopback-sdk-builder",
   "version": "2.3.1",
   "description": "Tool for auto-generating Software Development Kits (SDKs) for LoopBack",
   "bin": {
