@@ -25,8 +25,8 @@ export class CookieBrowser {
   get(key: string): any {
     if (!this.cookies[key]) {
       let cookie = window.document
-                         .cookie.split('; ')
-                         .filter((item: any) => item.split('=')[0] === key).pop();
+      .cookie.split('; ')
+      .filter((item: any) => item.split('=')[0] === key).pop();
       if (!cookie) {
         return null;
       }
@@ -46,8 +46,15 @@ export class CookieBrowser {
    * The setter will return any type of data persisted in cookies.
    **/
   set(key: string, value: any, expires?: Date): void {
-    this.cookies[key] = value;
-    let cookie = `${key}=${encodeURI(value)}; path=/${expires ? `; expires=${ expires.toUTCString() }` : ''}`;
+        this.cookies[key] = value;
+    let cookie = `${key}=${encodeURI(value)}; path=/; SameSite=Lax`;
+
+    if (location.protocol === 'https:') cookie += '; Secure';
+
+    if (expires) {
+      cookie += `; expires=${expires.toUTCString()}`;
+    }
+
     window.document.cookie = cookie;
   }
   /**
@@ -71,9 +78,9 @@ export class CookieBrowser {
    **/
   private parse(value: any) {
     try {
-        return JSON.parse(decodeURI(value));
+      return JSON.parse(decodeURI(value));
     } catch (e) {
-        return value;
+      return value;
     }
   }
 }
